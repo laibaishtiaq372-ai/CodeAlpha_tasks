@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌐 Mini Social Media</h1>
+    </header>
+
+
+    <div class="container">
+
+        <!-- PROFILE -->
+
+        <div class="card profile">
+
+            <h2>👤 Laiba</h2>
+
+            <p>@laiba</p>
+
+            <p>
+                Software Engineering Student
+            </p>
+
+            <p id="followers">
+                Followers: 0
+            </p>
+
+            <button onclick="followUser()">
+                Follow
+            </button>
+
+        </div>
+
+
+        <!-- CREATE POST -->
+
+        <div class="card">
+
+            <h2>Create Post</h2>
+
+            <textarea
+                id="postText"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <button onclick="createPost()">
+                Post
+            </button>
+
+        </div>
+
+
+        <!-- POSTS -->
+
+        <h2>Posts</h2>
+
+        <div id="posts"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
