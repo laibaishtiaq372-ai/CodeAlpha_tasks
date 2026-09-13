@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Projects</h2>
+    <form id="project-form">
+      <input type="text" id="project-title" placeholder="New Project Title" required>
+      <button type="submit">+ Create Project</button>
+    </form>
+    <ul id="project-list"></ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1 id="selected-project-title">Select a Project</h1>
+    </header>
+
+    <div id="task-create-section" style="display:none;">
+      <h3>Add New Task</h3>
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required>
+        <input type="text" id="task-assignee" placeholder="Assign to (User)" required>
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+
+    <div class="board" id="board" style="display:none;">
+      <div class="column" id="todo-col">
+        <h3>To Do</h3>
+        <div class="task-list" id="tasks-Todo"></div>
+      </div>
+      <div class="column" id="inprogress-col">
+        <h3>In Progress</h3>
+        <div class="task-list" id="tasks-In Progress"></div>
+      </div>
+      <div class="column" id="done-col">
+        <h3>Done</h3>
+        <div class="task-list" id="tasks-Done"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
